@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;family=JetBrains+Mono:wght@100..800&amp;family=Noto+Serif:wght@400;700&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#e2e2e2",
+              "surface-container-highest": "#e2e2e2",
+              "on-primary-container": "#ffffff",
+              "primary": "#000000",
+              "primary-container": "#3b3b3b",
+              "on-secondary-container": "#1b1c1c",
+              "tertiary": "#3b3b3b",
+              "on-error-container": "#410002",
+              "surface-container-high": "#e8e8e8",
+              "inverse-surface": "#2f3131",
+              "inverse-on-surface": "#f1f1f1",
+              "secondary-fixed": "#c8c6c6",
+              "primary-fixed-dim": "#474747",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dadada",
+              "inverse-primary": "#c6c6c6",
+              "secondary-fixed-dim": "#acabab",
+              "on-tertiary-container": "#ffffff",
+              "on-error": "#ffffff",
+              "surface-bright": "#f9f9f9",
+              "secondary-container": "#d6d4d4",
+              "on-surface": "#1a1c1c",
+              "on-tertiary": "#e2e2e2",
+              "surface": "#f9f9f9",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#5e5e5e",
+              "on-primary": "#e2e2e2",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed": "#1b1c1c",
+              "outline": "#777777",
+              "on-background": "#1a1c1c",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#c6c6c6",
+              "tertiary-container": "#747474",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#5e5e5e",
+              "secondary": "#5e5e5e",
+              "background": "#f9f9f9",
+              "on-primary-fixed": "#ffffff",
+              "on-secondary-fixed-variant": "#3b3b3b",
+              "surface-tint": "#5e5e5e",
+              "tertiary-fixed-dim": "#474747",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f3f3f3",
+              "on-surface-variant": "#474747"
+            },
+            fontFamily: {
+              "serif": ["Playfair Display", "serif"],
+              "body-serif": ["Source Serif 4", "serif"],
+              "mono": ["JetBrains Mono", "monospace"],
+              "headline": ["Noto Serif"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {
+              "none": "0px",
+              "DEFAULT": "0px", 
+              "lg": "0px", 
+              "xl": "0px", 
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Source Serif 4', serif;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .mono-label {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased selection:bg-black selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-white dark:bg-black flex justify-between items-center w-full px-8 py-6 max-w-full docked full-width top-0 border-b-4 border-black dark:border-white">
+<div class="text-2xl font-mono font-bold tracking-tighter text-black dark:text-white">
+            STUDIO
+        </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-sm font-mono JetBrains Mono tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors" href="#">HOME</a>
+<a class="text-sm font-mono JetBrains Mono tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors" href="#">ABOUT</a>
+<a class="text-sm font-mono JetBrains Mono tracking-widest uppercase text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1" href="#">WORKS</a>
+<a class="text-sm font-mono JetBrains Mono tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors" href="#">CONTACT</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<header class="px-8 py-24 md:py-40">
+<h1 class="text-7xl md:text-9xl font-serif font-black tracking-tight leading-none text-black dark:text-white">
+                Selected Projects.
+            </h1>
+<div class="mt-12 w-full h-[4px] bg-black"></div>
+</header>
+<!-- Works Grid -->
+<section class="px-8 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<!-- Project Card 01 -->
+<article class="group border border-black p-0 bg-white transition-all duration-300">
+<div class="aspect-video w-full border-b border-black flex items-center justify-center bg-neutral-50">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-400">Project Preview</span>
+</div>
+<div class="p-10">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-500 block mb-4">01 / ARCHITECTURE</span>
+<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Monolith Pavilion</h2>
+<p class="text-lg font-serif text-neutral-700 leading-relaxed mb-8 max-w-md">
+                            An exploration of brutalist geometry and natural light within a high-density urban environment. Investigating the tension between concrete and void.
+                        </p>
+<a class="font-mono text-sm tracking-widest uppercase underline decoration-1 underline-offset-8 hover:bg-black hover:text-white transition-all duration-0 inline-block px-2 py-1" href="#">DETAILS</a>
+</div>
+</article>
+<!-- Project Card 02 -->
+<article class="group border border-black p-0 bg-white transition-all duration-300">
+<div class="aspect-video w-full border-b border-black flex items-center justify-center bg-neutral-50">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-400">Project Preview</span>
+</div>
+<div class="p-10">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-500 block mb-4">02 / INTERFACE</span>
+<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Ethos OS</h2>
+<p class="text-lg font-serif text-neutral-700 leading-relaxed mb-8 max-w-md">
+                            A minimalist operating system concept designed to reduce cognitive load through typographic hierarchy and spatial awareness.
+                        </p>
+<a class="font-mono text-sm tracking-widest uppercase underline decoration-1 underline-offset-8 hover:bg-black hover:text-white transition-all duration-0 inline-block px-2 py-1" href="#">DETAILS</a>
+</div>
+</article>
+<!-- Project Card 03 -->
+<article class="group border border-black p-0 bg-white transition-all duration-300">
+<div class="aspect-video w-full border-b border-black flex items-center justify-center bg-neutral-50">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-400">Project Preview</span>
+</div>
+<div class="p-10">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-500 block mb-4">03 / IDENTITY</span>
+<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Fragment Collective</h2>
+<p class="text-lg font-serif text-neutral-700 leading-relaxed mb-8 max-w-md">
+                            Visual identity for a decentralised art studio. Built on a modular grid system that adapts across physical and digital mediums.
+                        </p>
+<a class="font-mono text-sm tracking-widest uppercase underline decoration-1 underline-offset-8 hover:bg-black hover:text-white transition-all duration-0 inline-block px-2 py-1" href="#">DETAILS</a>
+</div>
+</article>
+<!-- Project Card 04 -->
+<article class="group border border-black p-0 bg-white transition-all duration-300">
+<div class="aspect-video w-full border-b border-black flex items-center justify-center bg-neutral-50">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-400">Project Preview</span>
+</div>
+<div class="p-10">
+<span class="font-mono text-xs tracking-widest uppercase text-neutral-500 block mb-4">04 / PUBLICATION</span>
+<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Negative Space</h2>
+<p class="text-lg font-serif text-neutral-700 leading-relaxed mb-8 max-w-md">
+                            A limited edition hardcover book exploring the philosophy of silence in modern design. Printed on high-gsm uncoated paper.
+                        </p>
+<a class="font-mono text-sm tracking-widest uppercase underline decoration-1 underline-offset-8 hover:bg-black hover:text-white transition-all duration-0 inline-block px-2 py-1" href="#">DETAILS</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Call to Action (Brutalist Style) -->
+<section class="border-t-4 border-black px-8 py-32 flex flex-col items-center text-center">
+<h2 class="text-5xl md:text-7xl font-serif mb-12 italic tracking-tight">Interested in collaborating?</h2>
+<button class="px-16 py-6 border-2 border-black font-mono text-lg tracking-widest uppercase hover:bg-black hover:text-white transition-all duration-0">
+                GET IN TOUCH
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-black flex justify-between items-center w-full px-8 py-12 docked full-width bottom-0 border-t-8 border-black dark:border-white">
+<div class="font-mono text-xs tracking-widest uppercase text-black dark:text-white">
+            © 2024 ALL RIGHTS RESERVED
+        </div>
+<div class="flex space-x-8">
+<a class="font-mono text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:underline decoration-1 underline-offset-4" href="#">EMAIL</a>
+<a class="font-mono text-xs tracking-widest uppercase text-neutral-500 dark:text-neutral-400 hover:underline decoration-1 underline-offset-4" href="#">GITHUB</a>
+</div>
+</footer>
+</body></html>
