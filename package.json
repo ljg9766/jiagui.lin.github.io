@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:docs": "cross-env VITE_BASE_PATH=/ljg9766.github.io/ BUILD_OUT=docs npm run build && node scripts/copy-spa-404.mjs docs",
+    "build:docs": "cross-env VITE_BASE_PATH=/jiagui.lin.github.io/ BUILD_OUT=docs npm run build && node scripts/copy-spa-404.mjs docs",
     "preview:docs": "vite preview --outDir docs",
     "lint": "eslint .",
     "preview": "vite preview"
